@@ -9,5 +9,6 @@ For collaborators using MinGW and Windows, use this step for makefile support
   5. Rename this file to "make" to enable "make" command support.
   6. Check support in the command line using "make --version"
   7. The project can now be compiled using the "make" command, running the makefile and compiling all cpp .files.
+  
 After compiling, use the command "main" to run the program.
   
