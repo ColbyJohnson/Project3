@@ -1,7 +1,7 @@
 # Project3
 COP 3530 Project 3 - Data Structure Comparison
 Project should be run using the included makefile.
-For collaborators using MinGW and Windows, use this step for makefile support
+For collaborators using MinGW and Windows, use the following steps to utilize makefile support
   1. Open the Windows command line.
   2. Install the mingw32-make package using the command "mingw-get install mingw32-make".
   3. Check installation using "ming32-make --version"
