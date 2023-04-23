@@ -3,10 +3,30 @@
 
 using namespace std;
 
-Graph::Graph() : vertexCount(0) {}
+Graph::Graph() : vertexCount(0) {} 
 
 void Graph::Construct() {
-    cout << "Hello, World!" << endl;
+    Region r1("Phoenix", "Arizona", 2.2, 3.3, 0.94);
+    Region r2("Tallahasse", "Florida", 3.3, 4.2, 0.84);
+    addEdge(r1, r2);
+}
+
+int Graph::Magnitude() {
+    return vertexCount;
+}
+
+void Graph::simpleTraversal() {
+    for(auto it = mapper.begin(); it != mapper.end(); it++) {
+        cout << "Region Name: " << it->second.getName() << ", State: " << it->second.getState() << endl;
+    }
+}
+
+void Graph::breadthFirst() {
+
+}
+
+void Graph::depthFirst() {
+    
 }
 
 void Graph::checkNode(Region& r) {
@@ -56,8 +76,4 @@ Region& Graph::mostPollutedRegionInState(string state) {
     }
 
     return mapper[output];
-}
-
-int Graph::Magnitude() {
-    return vertexCount;
 }

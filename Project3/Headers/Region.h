@@ -11,11 +11,13 @@ class Region {
     string state;
 
     public:
+    //Constructors
     Region() : name(""), state(""), latitude(0), longitude(0), pollutionLevel(0) {}
     Region(string _name, string _state, double _lat, double _long, double _pollutionLevel) : 
     name(_name), state(_state), latitude(_lat), longitude(_long), pollutionLevel(_pollutionLevel) {}
-    double distanceTo(Region r);
     //Accessors 
-    double getLongitude(), getLatitude(), getPollutionLevel();
+    double getLatitude(), getLongitude(), getPollutionLevel();
     string getName(), getState();
+    //Implementations
+    double distanceTo(Region r);
 };
