@@ -6,7 +6,6 @@ using namespace std;
 
 class MapManager {
     public:
-
-    unordered_map<string, vector<Region>>
+    unordered_map<string, vector<Region>> regionMap;
 
 };
